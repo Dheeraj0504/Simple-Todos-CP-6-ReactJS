@@ -1,21 +1,23 @@
 /* Write your CSS here */
-
 .todo-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+  margin: 10px;
 }
 
 .title {
   color: #000000;
   font-family: 'Roboto';
   font-size: 15px;
+  min-width: 140px;
 }
 
 @media screen and (min-width: 768px) {
   .title {
-    font-size: 25px;
+    font-size: 22px;
+    min-width: 600px;
   }
 }
 
@@ -38,4 +40,36 @@
     padding: 10px 15px;
     margin-left: 30px;
   }
+}
+.input-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.edit-input {
+  height: 35px;
+  width: 80%;
+  border-style: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 520;
+}
+.save-edit-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: 520;
+  padding: 8px 15px 8px 15px;
+  border-radius: 8px;
+  outline: none;
+  border-style: none;
+  margin-right: 15px;
+  height: 35px;
 }
